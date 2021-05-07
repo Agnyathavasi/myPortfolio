@@ -1,0 +1,647 @@
+
+/* font-family: 'Bad Script', cursive;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+body {
+	scroll-behavior: smooth;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	
+}
+
+.loader-bg {
+	position: fixed;
+	z-index: 9999999;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+}
+
+.loader {
+	border: 0 solid transparent;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: calc(50vh - 75px);
+	left: calc(50vw - 75px);
+}
+
+.loader:before,.loader:after {
+	content: '';
+	border: 1em solid #293d55;
+	border-radius: 50%;
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation: loader 2s linear infinite;
+	opacity: 0;
+}
+
+.loader:before {
+	animation-delay: .5s;
+}
+
+@keyframes loader {
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+.section1 {
+	background-image: linear-gradient(rgba(50,50,50,0.1),rgba(50,50,50,0.1)),url('backgrounds/webdevbg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin: auto auto;
+}
+
+.section1 nav {
+  background-color: #293d55;
+  color: #fff;
+  font-family: 'Work Sans', sans-serif;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 10px;
+
+}
+
+nav .brandidu {
+  font-size: 5em;
+	font-weight: 700;
+}
+
+nav .nav-brand {
+  font-size: 5em;
+  padding: 1em;
+	font-weight: 700;
+}
+
+nav .nav-brand:hover {
+  color: #000;
+}
+
+nav ul li .nav-link {
+  margin-right: 0;
+	margin-left: 1em;
+	color: #000;
+}
+
+nav ul li a:hover {
+	color: #fff;
+}
+
+.section1 .container-fluid {
+  top: 42%;
+  position: absolute;
+  text-align: center;
+  color: #f8f9fa;
+  font-family: 'Bad Script', cursive;
+}
+
+.section1 .container-fluid h1 {
+  font-size: 2.5em;
+	line-height: 1.7em;
+}
+
+.section1 .container-fluid span {
+	font-family: ariel;
+  font-size: 2em;
+  color: #f8f9fa;
+}
+
+@media screen and (max-width: 550px) {
+	.section1 .container-fluid {
+		top: 35%;
+	}
+}
+
+.section2 {
+	position: absolute;
+	top: 100%;
+	width: 100%;
+}
+
+.sec2 {
+  padding: 1.5em;
+  background-color: #eee;
+  height: 90%;
+}
+
+.sec2 #rowdivsec2 {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.sec2 .col-md-7 {
+  padding-top: 5em;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.sec2 h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  color: #2a3f54;
+  padding-bottom: 0.5em;
+}
+
+.sec2 p {
+  padding-left: 10px;
+  color: #293d55;
+}
+
+.sec2 img {
+  margin-top: 2em;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+#profilepic {
+  text-align: center;
+}
+
+.sec3 {
+  	background-image: linear-gradient(rgba(20, 20, 20, 0.75),rgba(20, 20, 20, 0.75)),url('backgrounds/bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-bottom: 0.5em;
+}
+
+.sec3 h1 {
+	padding: 1em;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	text-align: center;
+}
+
+.sec3 .row {
+	justify-content: center;
+}
+
+.sec3 .row .col-lg-4 ,.sec4 .row .col-md-6 ,.sec4 .row .col-sm-12 {
+    padding: 10px;
+
+}
+
+.sec3 .row .card {
+	width: fit-content;
+	margin: 0.5em;
+	background-color: #eee;
+}
+
+.sec3 img {
+	margin: auto auto;
+	padding: 10px;
+	width: 100%;
+	height: fit-content;
+	border-radius: 14px;
+}
+
+.sec3 .row p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	margin-left: 2%;
+	margin-right: 2%;
+	color: #1d2f44;
+	
+}
+
+.sec3 h4 {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+	padding-left: 2%;
+	color: #293d55;
+	padding-bottom: 0.2em;
+}
+
+.sec3 p {
+	font-family: 'Roboto', sans-serif;
+	margin: 5px 5px;
+	color: #1d2f44;
+	height: max-content;
+	margin-bottom: 1em;
+}
+
+@media screen and (max-width: 1400px) {
+	.sec3 .row .card-text {
+		height: 144px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.sec3 .row .card-text {
+		height: 192px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.sec3 .row .card-text {
+		height: 168px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.sec3 .row .card-text {
+		height: 100px;
+	}
+
+	.sec3 {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.sec3 .row .card-text {
+		width: 100%;
+		height: 100%;
+	}
+
+	.sec3 .row .card {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+}
+
+.sec3 a {
+ 	color: #ffc107;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+}
+
+.sec3 a:hover {
+	text-decoration: none;
+	color: #007bff;
+}
+
+.sec4 {
+	background-image: linear-gradient(rgba(20, 20, 20, 0.75),rgba(20, 20, 20, 0.75)),url('backgrounds/skills-background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding-bottom:2em;
+}
+
+.sec4 h2 {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+	font-size: 2.2em;
+	text-align: center;
+	color: #fff;
+	padding: 1.2em;
+}
+
+.sec4 .row .col-lg-3 ,.sec4 .row .col-md-4 ,.sec4 .row .col-sm-6 {
+    padding: 10px;
+}
+
+.sec4 .row .card {
+	width: fit-content;
+	margin: 0.5em;
+	background-color: #eee;
+}
+
+.sec4 img {
+	margin: auto auto;
+	padding: 10px;
+	height: 150px;
+}
+
+.sec4 .row p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	margin-left: 2%;
+	margin-right: 2%;
+	color: #1d2f44;
+
+}
+
+@media screen and (max-width: 2000px) {
+	.sec4 .row .card-text {
+		width: 207px;
+		height: 100px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.sec4 .row .card-text {
+		width: 162px;
+		height: 140px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.sec4 .row .card-text {
+		width: 192px;
+		height: 140px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.sec4 .row .card-text {
+		width: 100%;
+		height: 100%;
+		margin: 0;
+	}
+
+	.sec4 .row .card {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+}
+
+.sec4 .row h5 {
+	margin-left:3%;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+	color: #293d55;
+}
+
+.sec4 .progress-bar {
+	width:90%;
+	height: 5px;
+	margin: 10px auto 30px auto;
+	border-radius: 5px;
+	text-align:center;
+}
+
+.sec4 .percentage {
+	display:block;
+	height: 100%;
+	background-color: orange;
+	border-radius: 5px;
+	animation: progress 1500ms ease-in 1;
+}
+
+.cprogram {width: 90%;}
+
+.java {width: 87%;}
+
+.html {width: 93%;}
+
+.javascript {width: 78%;}
+
+.android {width: 89%;}
+
+.bootstrap {width: 70%;}
+
+.python {width: 65%;}
+
+.node {width: 60%;}
+
+.mongo {width: 64%;}
+
+.express {width: 70%;}
+
+.react {width: 78%;}
+
+.css {width: 70%;}
+
+.sql {width: 45%;}
+
+@keyframes progress {
+	from{
+		width:0px;
+	}
+}
+
+.sect5 {
+	text-align: center;
+	background-color: #eee;
+	color: #2a3f54;
+}
+
+.sect5 .row {
+	margin-top: 3em;
+}
+
+.sect5 .col-md-4 {
+	padding-bottom: 3em;
+}
+
+.sect5 h2 {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 900;
+	padding-top: 1.2em;
+}
+
+.sect5 h5, h6 {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+}
+
+.sect5 h4 {
+	margin-top: 0.5em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+footer{
+	padding: 1.5em 0 0 0;
+  	width: 100%;
+  	background: #eee;
+	font-family: 'Roboto', sans-serif;
+}
+.main-content{
+  	display: flex;
+}
+.main-content .box{
+  	flex-basis: 50%;
+  	padding: 10px 20px;
+}
+.box h2{
+	font-size: 1.5em;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 600;
+	border-bottom: 1px solid #aaa;
+}
+
+
+.box .content{
+  	margin: 20px 0 0 0;
+	  padding-left: 5px;
+	  padding-right: 5px;
+}
+
+.left .content p{
+  text-align: justify;
+}
+
+.left .content .social{
+	margin-top: 30px;
+}
+
+.left .content .social a{
+  margin: 0.5em;	
+  padding: 0.5em;
+  color: #000;
+  text-decoration: none;
+}
+
+.left .content .social svg {
+	margin: auto auto;
+}
+
+.left .content .social svg:hover {
+	transform: scale(1.2);
+	transition-property: transform;
+	transition-duration: 0.2s;
+}
+
+.left .content .social svg:active {
+	transform: scale(1);
+	transition-property: transform;
+	transition-duration: 0.1s;
+}
+
+.left .content .social .bi-facebook:hover {
+	fill: #4267B2;
+}
+
+.left .content .social .bi-github:hover {
+	fill: #333;
+}
+
+.left .content .social .bi-linkedin:hover {
+	fill: #0077b5;
+}
+
+.left .content .social .bi-instagram:hover {
+	fill: #cd486b;
+}
+
+.left .content .social a span{
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 20px 0;
+}
+
+.right .content .list-group-item{
+	background-color: #eee;
+	padding: 1em;
+	font-weight: 500;
+}
+
+.right .content a {
+	text-decoration: none;
+	color: #212529;
+}
+
+.bottom center{
+  margin-top: 3em;
+  padding: 15px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1em;
+  background: #151515;
+}
+.bottom center span{
+  color: #656565;
+}
+
+.bottom center #name{
+  color: #fff;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+	.box {
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+	.box h2 {
+		text-align: left;
+	}
+
+	.center .content{
+		text-align: left;
+		margin-left: 1em;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	border-radius: 10px;
+	background-color: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+	width: 2px;
+	background: #212529;
+}
+
+::-webkit-scrollbar-track:hover {
+	background-color: #ccc;
+}
+
+::-webkit-scrollbar-track-piece {
+	display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #394653;
+}
+
+::-webkit-scrollbar-thumb:active{
+	background: #212529;
+}
