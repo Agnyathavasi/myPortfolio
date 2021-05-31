@@ -203,6 +203,10 @@ nav ul li a:hover {
 	justify-content: center;
 	margin-bottom: 3em;
 }
+.sec3 .row h3 {
+	font-family: 'Roboto', sans-serif;
+	color: #fff;
+}
 
 .sec3 .row .col-lg-4 ,.sec4 .row .col-md-6 ,.sec4 .row .col-sm-12 {
     padding: 10px;
@@ -378,6 +382,11 @@ nav ul li a:hover {
 		margin-right: auto;
 		text-align: center;
 	}
+}
+
+.sec4 .row {
+	justify-content: center;
+	align-items: center;
 }
 
 .sec4 .row h5 {
