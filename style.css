@@ -203,8 +203,25 @@ nav ul li a:hover {
 	justify-content: center;
 	margin-bottom: 3em;
 }
-.sec3 .row h3 {
+.sec3 .wrapper {
+	display: flex;
+	overflow-x: auto;
+}
+
+.sec3 .wrapper::-webkit-scrollbar{
+	height: 8px;
+}
+
+.sec3 .wrapper::-webkit-scrollbar-track-piece{
+	height: 2px;
+}
+
+.sec3 .wrapper .card {
+	margin: 15px;
+}
+.sec3  h3 {
 	font-family: 'Roboto', sans-serif;
+	margin-top: 1em;
 	color: #fff;
 }
 
@@ -642,10 +659,12 @@ footer{
 ::-webkit-scrollbar-thumb {
 	width: 2px;
 	background: #212529;
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track:hover {
 	background-color: #ccc;
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track-piece {
