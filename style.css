@@ -2,14 +2,14 @@
 /* font-family: 'Bad Script', cursive;
 font-family: 'PT Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;
-font-family: 'Source Sans Pro', sans-serif; */
+font-family: 'Lato', sans-serif; */
 
 body {
 	scroll-behavior: smooth;
 	padding: 0;
 	margin: 0;
 	background-color: transparent;
-	
+	overflow: overlay;
 }
 
 .loader-bg {
@@ -77,7 +77,7 @@ body {
 .section1 nav {
   background-color: #293d55;
   color: #fff;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 nav a {
@@ -160,8 +160,8 @@ nav ul li a:hover {
 }
 
 .sec2 h2 {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 700;
+	font-family: 'Lato', sans-serif;
+  font-weight: 900;
   font-size: 3em;
   color: #2a3f54;
   padding-bottom: 0.5em;
@@ -193,8 +193,8 @@ nav ul li a:hover {
 
 .sec3 h1 {
 	padding: 1em;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 700;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
 	color: #fff;
 	text-align: center;
 }
@@ -254,8 +254,8 @@ nav ul li a:hover {
 }
 
 .sec3 h4 {
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 500;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
 	padding-left: 2%;
 	color: #293d55;
 	padding-bottom: 0.2em;
@@ -313,7 +313,7 @@ nav ul li a:hover {
 
 .sec3 a {
  	color: #ffc107;
-	font-family: 'Work Sans', sans-serif;
+	 font-family: 'Lato', sans-serif;
 	font-weight: 500;
 }
 
@@ -332,8 +332,8 @@ nav ul li a:hover {
 }
 
 .sec4 h2 {
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 800;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
 	font-size: 2.2em;
 	text-align: center;
 	color: #fff;
@@ -412,7 +412,7 @@ nav ul li a:hover {
 
 .sec4 .row h5 {
 	margin-left:3%;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 600;
 	font-size: 20px;
 	color: #293d55;
@@ -481,13 +481,13 @@ nav ul li a:hover {
 }
 
 .sect5 h2 {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 	padding-top: 1.2em;
 }
 
 .sect5 h5, h6 {
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 500;
 }
 
@@ -512,7 +512,7 @@ footer{
 }
 .box h2{
 	font-size: 1.5em;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 600;
 	border-bottom: 1px solid #aaa;
 }
@@ -591,21 +591,101 @@ footer{
   margin: 20px 0;
 }
 
-.right .content .list-group-item{
-	background-color: #eee;
-	padding: 1em;
+.right form .text{
+	font-size: 1.0625rem;
+	margin-bottom: 2px;
+	color: #121221;
 	font-weight: 500;
-}
+  }
+  .right form .msg{
+	margin-top: 10px;
+  }
+  .right form input, .right form textarea{
+	width: 100%;
+	font-size: 1.0625rem;
+	background: #151515;
+	color: #fafafa;
+	padding-left: 10px;
+	border: 1px solid #222222;
+	border-radius: 3px;
+  }
+  
+  .form-group {
+	width: 100%;
+	margin-top: 15px;
+	font-size: 1em;
+	font-weight: 500;
+  }
+  .form-group input,
+  .form-group textarea {
+	width: 100%;
+	padding: 5px;
+	font-size: 18px;
+	border: 1px solid rgba(128, 128, 128, 0.199);
+	margin-top: 5px;
+  }
 
-.right .content a {
-	text-decoration: none;
-	color: #212529;
-}
+  .astrek {
+	  color: red;
+  }
+  
+  textarea {
+	resize: vertical;
+  }
+  button[type="submit"] {
+	width: 100%;
+	border: none;
+	outline: none;
+	padding: 16px 16px;
+	font-size: 1.1em;
+	border-radius: 8px;
+	font-family: "Roboto";
+	background-color: #121212;
+	color: #f1f1f1;
+	text-align: center;
+	cursor: pointer;
+	margin-top: 10px;
+	transition: 0.2s ease background-color;
+  }
+  button[type="submit"]:hover {
+	background-color: #212121;
+  }
+  #status {
+	width: 90%;
+	max-width: 500px;
+	text-align: center;
+	padding: 5px;
+	margin: 0 auto;
+	border-radius: 8px;
+  }
+  #status.success {
+	background-color: rgb(211, 250, 153);
+	animation: status 4s ease forwards;
+  }
+  #status.error {
+	background-color: rgb(250, 129, 92);
+	color: white;
+	animation: status 4s ease forwards;
+  }
+  @keyframes status {
+	0% {
+	  opacity: 1;
+	  pointer-events: all;
+	}
+	90% {
+	  opacity: 1;
+	  pointer-events: all;
+	}
+	100% {
+	  opacity: 0;
+	  pointer-events: none;
+	}
+  }
 
 .bottom center{
   margin-top: 3em;
   padding: 15px;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1em;
   background: #151515;
 }
@@ -635,7 +715,7 @@ footer{
 }
 
 @media screen and (max-width: 576px) {
-	.box {
+	.box .social{
 		text-align: center;
 		margin-bottom: 1em;
 	}
@@ -651,30 +731,11 @@ footer{
 }
 
 ::-webkit-scrollbar {
-	width: 10px;
-	border-radius: 10px;
-	background-color: #eee;
+	width: 8px;
+	background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-	width: 2px;
-	background: #212529;
+	background: linear-gradient(rgba(156, 156, 156, 0.4),rgba(156, 156, 156, 0.4));
 	border-radius: 10px;
-}
-
-::-webkit-scrollbar-track:hover {
-	background-color: #ccc;
-	border-radius: 10px;
-}
-
-::-webkit-scrollbar-track-piece {
-	display: none;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background: #394653;
-}
-
-::-webkit-scrollbar-thumb:active{
-	background: #212529;
 }
