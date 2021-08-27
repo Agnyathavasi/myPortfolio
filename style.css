@@ -203,22 +203,7 @@ nav ul li a:hover {
 	justify-content: center;
 	margin-bottom: 3em;
 }
-.sec3 .wrapper {
-	display: flex;
-	overflow-x: auto;
-}
 
-.sec3 .wrapper::-webkit-scrollbar{
-	height: 8px;
-}
-
-.sec3 .wrapper::-webkit-scrollbar-track-piece{
-	height: 2px;
-}
-
-.sec3 .wrapper .card {
-	margin: 15px;
-}
 .sec3  h3 {
 	font-family: 'Roboto', sans-serif;
 	margin-top: 1em;
